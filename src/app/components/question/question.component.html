@@ -1,0 +1,10 @@
+<div>
+	<div class="questionBlock">
+		<p>{{question.question}} <button (click)="question.hide = !question.hide">Show Answer</button> <button (click)="removeQuestion(question, index)">Remove</button></p>
+	</div>
+	<div class="answerBlock" [hidden]="question.hide">
+		<p>{{question.answer}}</p>
+	</div>
+	<br>
+	<hr>
+</div>

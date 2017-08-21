@@ -1,0 +1,16 @@
+<div class="addQuestionBlock">
+	<h3>Add new FAQ</h3>
+	<form (submit)="addQuestion()">
+		<div class="formGroup">
+			<label>Question:</label>
+			<input type="text" [(ngModel)]="text" name="text">
+		</div>
+		<div class="formGroup">
+			<label>Answer:</label>
+			<input type="text" [(ngModel)]="answer" name="answer">
+		</div>
+		<input type="submit" value="Save">
+	</form>
+</div>
+<br>
+<hr>
